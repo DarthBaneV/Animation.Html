@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item1{
+    border: 0;
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+    0% {background-color: red;
+        border-radius: 10px;
+    }
+    25% {background-color: yellow;
+        border-radius: 20px;
+    }
+    50% {background-color: blue;
+        border-radius: 30px;
+    }
+    75% {background-color: green;
+        border-radius: 40px;
+    }
+    100% {background-color: red;
+        border-radius: 10px;
+    }
+}
+
+.item2{
+    border: 0;
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2{
+    0% {background-color: red;
+        border-radius: 10px;
+    }
+    25% {background-color: yellow;
+        border-radius: 20px;
+    }
+    50% {background-color: blue;
+        border-radius: 30px;
+    }
+    75% {background-color: green;
+        border-radius: 40px;
+    }
+    100% {background-color: red;
+        border-radius: 10px;
+    }
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg); }
+    75% { transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+.item3{
+    border: 0;
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation: example3 3s infinite, controle 5s infinite 10s;
+}
+
+@keyframes example3{
+    0% { width: 0% } 
+    50% {width: 100%;}
+    100% { width: 0% } 
+}
+
+@keyframes controle{
+    0% {background-color: red;
+        border-radius: 10px;
+    }
+    25% {background-color: yellow;
+        border-radius: 20px;
+    }
+    50% {background-color: blue;
+        border-radius: 30px;
+    }
+    75% {background-color: green;
+        border-radius: 40px;
+    }
+    100% {background-color: red;
+        border-radius: 10px;
+    }
+}
+
